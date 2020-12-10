@@ -1,0 +1,661 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+i {
+  font-style: normal;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+input {
+  outline: none;
+}
+
+/* flex 布局 */
+
+.row_flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.col_flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.st_flex {
+  justify-content: flex-start;
+}
+
+.ar_flex {
+  justify-content: space-around;
+}
+
+.wr_flex {
+  flex-wrap: wrap;
+}
+
+.be_flex {
+  justify-content: space-between;
+}
+
+.cen_flex {
+  justify-content: center;
+}
+
+.al_flex {
+  align-items: center;
+}
+.end_flex {
+  justify-items: flex-end;
+}
+.img_flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+img {
+  object-fit: cover;
+}
+
+.bg_color {
+  background-color: #3b63a6;
+}
+
+/* 修饰滚动条 */
+::-webkit-scrollbar {
+  width: 3px; /*滚动条宽度*/
+  height: 5px; /*滚动条高度*/
+}
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px; /*滚动条的背景区域的圆角*/
+  background-color: #fffbfb; /*滚动条的背景颜色*/
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px; /*滚动条的圆角*/
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #cccccc; /*滚动条的背景颜色*/
+}
+.container_1200 {
+  width: 1200px;
+  margin: 0 auto;
+}
+.add_right {
+  z-index: 10 !important;
+}
+.page_fixed {
+  position: fixed;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  height: 100px;
+}
+.list_synopsis{
+  -webkit-box-orient: vertical !important ;
+}
+
+/* 集团 */
+.banner_ad {
+  width: 100%;
+  height: 450px;
+}
+
+.banner_ad img {
+  width: 100%;
+  height: 100%;
+}
+
+/* 内容 */
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.intro,.culture {
+  margin-bottom: 80px;
+}
+
+/* 弹框 */
+
+.dia_tit {
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch:  bold;
+  letter-spacing: 0px;
+  color: #6a6a6a;
+}
+
+.dia_info {
+  font-size: 18px;
+  letter-spacing: 0px;
+  font-weight: 600;
+  color: #1a47b0;
+  margin: 10px 0;
+}
+
+.dia_text {
+  width: 70%;
+  padding: 0 0 0 25px;
+}
+
+.dia_photo img {
+  width: 100%;
+  height: 100%;
+}
+
+.dia_photo {
+  width: 261px;
+  height: 348px;
+}
+.el-dialog__body{
+  font-size: 16px !important;
+  text-align: justify !important;
+}
+
+/* 管理团队 */
+
+.team_list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.team {
+  width: 100%;
+  margin: 0 auto 20px;
+}
+
+.team_title {
+  padding: 30px 0 10px;
+}
+
+.member {
+  padding:20px 30px 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  margin: 30px 15px;
+  box-shadow: 19.799px 19.799px 40px 0px rgba(0, 0, 0, 0.1);
+  transition: 1s;
+  cursor: pointer;
+}
+
+.member:hover {
+  box-shadow: 29.698px 29.698px 60px 0px rgba(0, 0, 0, 0.3);
+}
+
+.team_photo {
+  width: 203px;
+  height: 203px;
+  border-radius: 50%;
+  margin-bottom:15px;
+}
+
+.team_photo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.memner_text {
+  text-align: center;
+  font-size: 14px;
+  color: #595f6f;
+  font-weight: 600;
+}
+
+.memner_text h4 {
+  font-size: 20px !important;
+  line-height: 34px;
+  color: #1a47b0!important;
+}
+.post{
+  font-size:16px;
+  font-weight: normal;
+}
+
+.pitch {
+  color: #1a47b0 !important;
+}
+
+/* 内容 */
+
+.art_box h3 ,.team_title h3 ,.disease_title h3{
+  line-height: 38px;
+  font-size: 32px;
+  font-weight: 900;
+  text-transform : uppercase;
+}
+.subhead{
+  font-size:22px !important;
+}
+
+.art_img {
+  width: 430px;
+  height: 100%;
+  margin-left: 70px;
+  margin-top: 42px;
+}
+
+.art_box {}
+
+.art_text {
+  width: 100%;
+  margin-top:40px;
+  line-height: 27px;
+  font-size:18px;
+}
+
+.art_text p{
+  text-indent: 32px;
+  margin-bottom:20px;
+}
+/* 空白侧边 */
+
+.border_right {
+  width: 1200px;
+  height: 40px;
+  border-right: 5px solid #16264b;
+  margin: 25px auto;
+}
+
+/* 面包屑 */
+
+.el-menu-item {
+  font-size: 16px !important;
+}
+
+.el-menu.el-menu--horizontal {
+  border-bottom: solid 0px transparent !important;
+  background-color: transparent !important;
+}
+
+.el-menu-item {
+  border-bottom: solid 0px transparent !important;
+}
+
+.el-menu-item {
+  padding: 0 !important;
+  margin: 0 20px !important;
+}
+
+.el-menu--horizontal>.el-menu-item.is-active {
+  border-bottom: 3px solid #16264b !important;
+  font-weight: 900;
+  color: #16264b !important;
+  background-color: transparent !important;
+}
+
+.el-menu--horizontal>.el-menu-item {
+  background-color: transparent !important;
+  font-size: 18px !important;
+}
+
+.page_container {
+  height: 100%;
+}
+
+.line {
+  height: 60px;
+  /* border-bottom: 1px solid #e6e6e6; */
+}
+
+.line_border {
+  width: 100%;
+  height: 1px;
+  background: #e6e6e6;
+  ;
+}
+
+/* 产品 */
+.product_art_name {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #000;
+  font-weight: 600;
+}
+
+.team_title {
+  padding: 5px 0;
+}
+
+
+.disease_content {
+  line-height: 28px;
+  text-align: justify;
+}
+
+.disease_list {
+  margin-bottom: 16px;
+  line-height: 24px;
+}
+
+.disease_ms {
+  line-height: 28px;
+  text-align: justify;
+  margin: 30px 0;
+  width: 1200px;
+  font-weight: 600;
+  background: #fff;
+  /* border: 1px solid #08a3eb; */
+  border-radius: 5px;
+  color: #000;
+  padding: 30px;
+  box-shadow: 0px 0px 8px 0px rgba(7, 17, 27, 0.1);
+  font-size: 18px;
+}
+
+/* .disease_ms p {
+  color: #000;
+  font-size: 16px;
+} */
+
+.zk_product {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 30px 0;
+}
+
+.zk_product_link {
+  margin: 15px 8px;
+  cursor: pointer;
+}
+
+.product_list {
+  background-color: #fff;
+  padding: 15px 50px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+  /* border: 1px solid #08a3eb; */
+  box-shadow: 9.899px 9.899px 20px 0px rgba(0, 0, 0, 0.1);
+  transition: All 0.4s ease-in-out;
+}
+
+.zk_product_link:hover .product_list {
+  box-shadow: 9.899px 9.899px 20px 0px rgba(0, 0, 0, 0.3);
+  transform: translate(0, -5px);
+}
+
+.zk_product_link:hover div {
+  color: #1a47b0;
+}
+
+.Dialog_content {
+  font-size: 16px;
+  color: #6a6a6a;
+}
+
+.Dialog_title {
+  font-size: 16px;
+  color: #1a47b0 !important;
+  margin: 20px 0 0px;
+  font-weight: bold;
+}
+
+.Dialog_content p {
+  font-size: 16px;
+  text-align: justify;
+  color: #6a6a6a;
+  line-height: 28px;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB,
+  Microsoft YaHei, SimSun, sans-serif;
+}
+
+.el-dialog--center .el-dialog__body {
+  padding: 0px 25px 30px !important;
+}
+
+.p_img {
+  text-align: center;
+}
+
+.p_img img {
+  box-shadow: 9.899px 9.899px 20px 0px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.disease_display {
+  display: flex;
+}
+
+.disease_left {
+  width: 90%;
+  padding-right: 100px;
+}
+
+.other_title {
+  color: #1a47b0 !important;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.other_con_txt {
+  padding: 15px 0 10px;
+}
+
+.other_pro_con {
+  font-size: 14px !important;
+}
+
+.pro_con {
+  margin-bottom: 80px;
+}
+
+/* 新闻中心 */
+/* 分页 */
+
+.page_show .el-dialog .el-pager li {
+  background: transparent !important;
+}
+
+/*  文章列表 */
+
+
+.newscenter_list {
+  display: flex;
+  width: 1110px;
+  justify-content: space-between;
+  margin: 30px auto 30px;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.newescontent_list {
+  background-color: #fff;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+  width: 535px;
+  box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.15);
+  transition: All 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.newescontent_list:hover {
+  box-shadow: 0px 33px 40px 0px rgba(0, 0, 0, 0.15);
+  transform: translate(0, -5px);
+}
+
+.newescontent_list:hover .newslist_text h1,
+.newescontent_list:hover .time_btn a {
+  color: #1a47b0;
+}
+
+.newslist_img {
+  width: 140px;
+  height:166px;
+  border-radius: 5px 0 0 5px;
+}
+
+.newslist_img img {
+  width: 140px;
+  height: 100%;
+  border-radius: 5px 0 0 5px;
+}
+
+.newslist_text {
+  padding: 14px 20px 12px;
+  width: 100%;
+}
+
+.newslist_text h1 {
+  font-size: 20px;
+  color: #262626;
+  transition: All 0.4s ease-in-out;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-weight: 600;
+  /* margin-bottom:12px; */
+  line-height: 30px;
+}
+
+.news_content_synopsis {
+  font-size: 16px;
+  color: #6a6a6a;
+  line-height: 24px;
+  width: 350px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  height: 44px;
+  text-indent: 16px;
+}
+
+.time_btn {
+  color: #969696;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+.new_content_btn {
+  color: #1a47b0;
+  transition: All 0.4s ease-in-out;
+  font-weight: 600;
+}
+
+.disease_content {
+  line-height: 28px;
+  text-align: justify;
+}
+
+.disease_list {
+  margin-bottom: 16px;
+  line-height: 24px;
+}
+
+/* 面包屑 */
+
+.page_container {
+  height: 100%;
+}
+
+.line {
+  height: 60px;
+  /* border-bottom: 1px solid #e6e6e6; */
+}
+.new_time{
+  color:#969696;
+}
+
+/* 联系我们 */
+/* 示例报告 */
+.rep_c{
+  justify-content: center;
+}
+.rep_list{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.rep_list  .bg {
+  background: #08a3eb;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+.rep_list .bg300 {
+  width: 300px;
+  height: 70px;
+}
+.rep_list p {
+  color: #fff;
+  line-height: 70px;
+  height: 70px;
+  font-size: 28px;
+  }
+  .rep_list .body {
+    padding: 0 39px;
+}
+.rep_list  .rig{
+  background: #08a3eb;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content:flex-start;
+}
+/* 示例报告详情 */
+.rep_art{
+  margin: 20px auto 60px;
+  width:960px;
+}
+.rep_art .section {
+  margin-bottom: 20px;
+  box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.15);
+}
+.rep_art .section h3 {
+  background: #08a3eb;
+  padding:10px;
+  text-align: center;
+  color: #fff;
+  font-size: 22px;
+}
+.rep_art .section .p {
+  padding: 20px;
+  line-height: 28px;
+  background: #fff;
+  font-size:16px;
+}
+.rep_art .section .p span {
+  display: block;
+  text-align: center;
+  border-bottom: 1px solid #999;
+  width:200px;
+  color: #999;
+  font-size:18px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+.rep_art .section .img {
+  text-align: center;
+  margin: 20px 0;
+}
+.rep_art .section .p .rating {
+  font-size: 32px;
+  color: #000;
+  line-height: 32px;
+  text-align: center;
+}

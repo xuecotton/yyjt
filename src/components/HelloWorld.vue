@@ -27,6 +27,9 @@
       <li><a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener">vue-loader</a></li>
       <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
     </ul>
+
+
+    <el-button class="aps">aps</el-button>
   </div>
 </template>
 
@@ -41,6 +44,11 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+$aps:15px;
+.aps{
+  width: $aps;
+  height: $aps;
+}
 h3 {
   margin: 40px 0 0;
 }
@@ -55,4 +63,5 @@ li {
 a {
   color: #42b983;
 }
+
 </style>
